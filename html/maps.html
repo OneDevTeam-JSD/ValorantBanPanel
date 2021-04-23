@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>VMonkey</title>
+    <!-- METAS: -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- LINKs EXTERNOS: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5fe1660938.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <!-- LINK CSS: -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/maps.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- HEADER INICIO -->
+    <header class="container header">
+        <div class="row">
+            <!-- NavBar-BST -->
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(48, 48, 48);">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/monkey_face_1.jpg" id="nav-img" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">ValorantMonkey<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" href="maps.html">Banimento de Mapas</a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" href="bombs.html">Banimento de Bombs</a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" href="agents.html">Banimento de Agentes</a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" id="btn-clear">[Limpar]</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input  id="inp-rnd-min"  class="form-control mr-sm-2" type="number" placeholder="Min" aria-label="Search">
+                        <input  id="inp-rnd-max"  class="form-control mr-sm-2" type="number" placeholder="Máx" aria-label="Search">
+                        <button id="btn-rnd-number"   class="btn btn-outline-success my-2 my-sm-0" type="button">Gerar</button>
+                        <input  id="inp-rnd-resp" class="form-control mr-sm-2" type="number" placeholder="???" aria-label="Search">
+                    </form>
+                </div>
+            </nav> <!--FimNavBar-->
+        </div>
+    </header>
+    <!-- HEADER FINAL -->
+
+    <!-- MAIN INICIO -->
+    <main class="container main">
+        <div class="row">
+            <!-- ascent -->
+            <div class="col-sm-4 col-md-4 col-lg-4 agent-box" id="ascent-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/maps/ascent.jpg">
+                    </div>
+                    <div class="col-9 agent-name">
+                        ASCENT
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/ControllerClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- bind -->
+            <div class="col-sm-4 col-md-4 col-lg-4 agent-box" id="bind-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/maps/bind.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        BIND
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/ControllerClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- beeze-->
+            <div class="col-sm-4 col-md-4 col-lg-4 agent-box" id="breeze-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/maps/breeze.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        BREEZE
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/InitiatorClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- haven -->
+            <div class="col-sm-4 col-md-4 col-lg-4 agent-box" id="haven-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/maps/haven.webp">
+                    </div>
+                    <div class="col-9 agent-name">
+                        HAVEN
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/SentinelClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- icebox -->
+            <div class="col-sm-4 col-md-4 col-lg-4 agent-box" id="icebox-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/maps/icebox.jpg">
+                    </div>
+                    <div class="col-9 agent-name">
+                        ICEBOX
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- split -->
+            <div class="col-sm-4 col-md-4 col-lg-4 agent-box" id="split-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/maps/split.jpeg">
+                    </div>
+                    <div class="col-9 agent-name">
+                        SPLIT
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- MIAN FINAL -->
+
+    <!-- FOOTER INICIO -->
+    <footer class="container footer">
+
+    </footer>
+    <!-- FOOTER FINAL -->
+
+    <!-- MEU LINK JS -->
+    <script src="../js/link.js">
+    </script>
+    <script src="../js/maps.js">
+    </script>
+
+    <!-- JS do Bootstrap: -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

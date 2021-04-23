@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>VMonkey</title>
+    <!-- METAS: -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- LINKs EXTERNOS: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5fe1660938.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <!-- LINK CSS: -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/agents.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- HEADER INICIO -->
+    <header class="container header">
+        <div class="row">
+            <!-- NavBar-BST -->
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(48, 48, 48);">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/monkey_face_1.jpg" id="nav-img" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">ValorantMonkey<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" href="maps.html">Banimento de Mapas</a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" href="bombs.html">Banimento de Bombs</a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" href="agents.html">Banimento de Agentes</a>
+                        </li>
+                        <li class="nav-item nav-item-link">
+                            <a class="nav-link" id="btn-clear">[Limpar]</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input  id="inp-rnd-min"  class="form-control mr-sm-2" type="number" placeholder="Min" aria-label="Search">
+                        <input  id="inp-rnd-max"  class="form-control mr-sm-2" type="number" placeholder="Máx" aria-label="Search">
+                        <button id="btn-rnd-number"   class="btn btn-outline-success my-2 my-sm-0" type="button">Gerar</button>
+                        <input  id="inp-rnd-resp" class="form-control mr-sm-2" type="number" placeholder="???" aria-label="Search">
+                    </form>
+                </div>
+            </nav> <!--FimNavBar-->
+        </div>
+    </header>
+    <!-- HEADER FINAL -->
+
+    <!-- MAIN INICIO -->
+    <main class="container main">
+        <div class="row">
+            <!-- astra -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="astra-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/astra.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        ASTRA
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/ControllerClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- breach -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="breach-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/breach.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        BREACH
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/InitiatorClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- brimstone -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="brimstone-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/brimstone.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        BRIMSTONE
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/ControllerClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- cypher -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="cypher-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/cypher.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        CYPHER
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/SentinelClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- jett -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="jett-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/jett.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        JETT
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- killjoy -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="killjoy-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/killjoy.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        KILLJOY
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/SentinelClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- omen -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="omen-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/omen.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        OMEN
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/ControllerClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- phoenix -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="phoenix-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/phoenix.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        PHOENIX
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- raze -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="raze-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/raze.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        RAZE
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- reyna -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="reyna-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/reyna.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        REYNA
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- sage -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="sage-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/sage.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        SAGE
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/SentinelClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- skye -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="skye-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/skye.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        SKYE
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/InitiatorClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- sova -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="sova-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/sova.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        SOVA
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/InitiatorClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- viper -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="viper-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/viper.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        VIPER
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/ControllerClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- yoru -->
+            <div class="col-sm-4 col-md-3 col-lg-3 agent-box" id="yoru-box">
+                <div class="row">
+                    <div class="col-12 agent-img">
+                        <img src="../images/agents/yoru.png">
+                    </div>
+                    <div class="col-9 agent-name">
+                        YORU
+                    </div>
+                    <div class="col-3 agent-class">
+                        <img src="../images/classes/DuelistClassSymbol.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- MIAN FINAL -->
+
+    <!-- FOOTER INICIO -->
+    <footer class="container footer">
+
+    </footer>
+    <!-- FOOTER FINAL -->
+
+    <!-- MEU LINK JS -->
+    <script src="../js/link.js">
+    </script>
+    <script src="../js/agents.js">
+    </script>
+
+    <!-- JS do Bootstrap: -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
